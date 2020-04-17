@@ -1,0 +1,18 @@
+// Change C or F
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let temperature = document.querySelector("#temperature-input");
+  temperature.innerHTML = 66;
+}
+
+function convertToCelsius(event) {
+  event.preventDefault();
+  let temperature = document.querySelector("#temperature-input");
+  temperature.innerHTML = 19;
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", convertToFahrenheit);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", convertToCelsius);
